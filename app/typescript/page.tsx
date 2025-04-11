@@ -70,11 +70,11 @@ const user: User = {
               </pre>
             </div>
             <div className="p-4 bg-blue-500 text-white rounded-lg">
-              <h3 className="text-xl font-bold mb-4">Exemple d'utilisation</h3>
+              <h3 className="text-xl font-bold mb-4">Exemple d&apos;utilisation</h3>
               <p>Les types permettent de :</p>
               <ul className="list-disc pl-6 mt-4">
                 <li>Détecter les erreurs à la compilation</li>
-                <li>Améliorer l'autocomplétion</li>
+                <li>Améliorer l&apos;autocomplétion</li>
                 <li>Documenter le code</li>
                 <li>Faciliter le refactoring</li>
               </ul>
@@ -109,7 +109,7 @@ const multiply = (a: number, b: number): number => a * b;
 
 // Fonction avec paramètres optionnels
 function greet(name: string, greeting?: string): string {
-  return \`\${greeting || 'Hello'} \${name}\`;
+  return \`\${greeting || &apos;Hello&apos;} \${name}\`;
 }`}
               </pre>
             </div>
@@ -168,7 +168,7 @@ class Container<T> {
               </pre>
             </div>
             <div className="p-4 bg-purple-500 text-white rounded-lg">
-              <h3 className="text-xl font-bold mb-4">Cas d'utilisation</h3>
+              <h3 className="text-xl font-bold mb-4">Cas d&apos;utilisation</h3>
               <ul className="list-disc pl-6">
                 <li>Fonctions réutilisables</li>
                 <li>Conteneurs de données</li>
