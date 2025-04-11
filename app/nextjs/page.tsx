@@ -17,6 +17,14 @@ export default function NextJS() {
             Next.js est un framework React qui offre des fonctionnalités avancées comme le rendu côté serveur (SSR),
             la génération de sites statiques (SSG), le routage automatique, et bien plus encore.
           </p>
+          <a 
+            href="https://nextjs.org/docs" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
+          >
+            Documentation officielle Next.js →
+          </a>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -46,6 +54,14 @@ export default function NextJS() {
               </ul>
             </div>
           </div>
+          <a 
+            href="https://nextjs.org/docs/app/building-your-application/routing" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
+          >
+            Documentation sur le routage →
+          </a>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -83,6 +99,14 @@ export default async function Page() {
               </ul>
             </div>
           </div>
+          <a 
+            href="https://nextjs.org/docs/app/building-your-application/rendering/server-components" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
+          >
+            Documentation sur les composants serveur →
+          </a>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -114,8 +138,38 @@ export async function POST(request: Request) {
               </pre>
             </div>
           </div>
+          <a 
+            href="https://nextjs.org/docs/app/building-your-application/routing/route-handlers" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
+          >
+            Documentation sur les API Routes →
+          </a>
+        </section>
+
+        <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
+          <h2 className="text-2xl font-semibold mb-4">Documentation complète</h2>
+          <div className="space-y-2">
+            <a 
+              href="https://nextjs.org/docs/getting-started" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
+            >
+              Guide de démarrage Next.js →
+            </a>
+            <a 
+              href="https://nextjs.org/docs/app/api-reference" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
+            >
+              Référence API Next.js →
+            </a>
+          </div>
         </section>
       </div>
     </div>
-  )
+  );
 } 

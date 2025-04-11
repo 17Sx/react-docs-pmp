@@ -2,7 +2,7 @@ import Compteur from '../components/Compteur';
 
 export default function React() {
   return (
-    <div className=" w-full space-y-12">
+    <div className="w-full space-y-12">
       <div className="space-y-6">
         <h1 className="text-5xl font-bold tracking-tight">
           Les bases de React
@@ -13,7 +13,7 @@ export default function React() {
       </div>
 
       <div className="w-full space-y-8">
-        <section className=" p-6 rounded-lg border border-gray-200 dark:border-gray-800">
+        <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
           <h2 className="text-2xl font-semibold mb-4">Les Composants</h2>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
             Les composants sont les blocs de construction de React. Voici un exemple simple :
@@ -37,6 +37,14 @@ export default function React() {
               <p>Ceci est mon premier composant</p>
             </div>
           </div>
+          <a 
+            href="https://react.dev/learn/your-first-component" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
+          >
+            Documentation sur les composants →
+          </a>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -64,6 +72,14 @@ export default function React() {
               <h1 className="text-xl font-bold">Bonjour Alice !</h1>
             </div>
           </div>
+          <a 
+            href="https://react.dev/learn/passing-props-to-a-component" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
+          >
+            Documentation sur les props →
+          </a>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -98,8 +114,38 @@ function Compteur() {
               <Compteur />
             </div>
           </div>
+          <a 
+            href="https://react.dev/learn/state-a-components-memory" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
+          >
+            Documentation sur le state →
+          </a>
+        </section>
+
+        <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
+          <h2 className="text-2xl font-semibold mb-4">Documentation complète</h2>
+          <div className="space-y-2">
+            <a 
+              href="https://react.dev/learn" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
+            >
+              Guide d&apos;apprentissage React →
+            </a>
+            <a 
+              href="https://react.dev/reference" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
+            >
+              Référence API React →
+            </a>
+          </div>
         </section>
       </div>
     </div>
-  )
+  );
 } 

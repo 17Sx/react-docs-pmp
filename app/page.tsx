@@ -59,7 +59,7 @@ export default function Home() {
               </div>
               <div className="space-y-4 text-gray-600 dark:text-gray-400">
                 <p>
-                  Suivez notre guide étape par étape pour commencer votre apprentissage :
+                  Suivez le guide étape par étape pour commencer :
                 </p>
                 <ol className="list-decimal list-inside space-y-2">
                   <li>Commencez par la section Installation</li>

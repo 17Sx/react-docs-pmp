@@ -61,6 +61,9 @@ const Navbar = () => {
               <NavLink href="/nextjs">
                 Next.js
               </NavLink>
+              <NavLink href="/typescript">
+                TypeScript
+              </NavLink>
               <NavLink href="/prisma">
                 Prisma
               </NavLink>

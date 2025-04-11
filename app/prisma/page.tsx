@@ -17,6 +17,14 @@ export default function Prisma() {
             Prisma est un ORM (Object-Relational Mapping) moderne qui simplifie l&apos;accès aux bases de données
             en fournissant une API type-safe et intuitive.
           </p>
+          <a 
+            href="https://www.prisma.io/docs" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
+          >
+            Documentation officielle Prisma →
+          </a>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -67,6 +75,14 @@ npx prisma generate`}
               </div>
             </div>
           </div>
+          <a 
+            href="https://www.prisma.io/docs/getting-started" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
+          >
+            Guide de démarrage Prisma →
+          </a>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -121,6 +137,14 @@ model Post {
               </div>
             </div>
           </div>
+          <a 
+            href="https://www.prisma.io/docs/concepts/components/prisma-schema/relations" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
+          >
+            Documentation sur les relations →
+          </a>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -179,8 +203,38 @@ const user = await prisma.user.delete({
               </div>
             </div>
           </div>
+          <a 
+            href="https://www.prisma.io/docs/concepts/components/prisma-client/crud" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
+          >
+            Documentation sur les opérations CRUD →
+          </a>
+        </section>
+
+        <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
+          <h2 className="text-2xl font-semibold mb-4">Documentation complète</h2>
+          <div className="space-y-2">
+            <a 
+              href="https://www.prisma.io/docs/concepts" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
+            >
+              Concepts de base Prisma →
+            </a>
+            <a 
+              href="https://www.prisma.io/docs/reference" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
+            >
+              Référence API Prisma →
+            </a>
+          </div>
         </section>
       </div>
     </div>
-  )
+  );
 } 
