@@ -23,12 +23,7 @@ const NavSection = ({ title, children }: { title: string; children: React.ReactN
 
 const Navbar = () => {
   return (
-    <nav className="fixed left-0 top-0 h-screen w-64 z-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 flex flex-col">
-      <div className="p-4">
-        <Link href="/" className="text-xl font-bold">
-          Documentation PMP
-        </Link>
-      </div>
+        <nav className="fixed left-0 top-0 h-screen w-64 z-100 bg-white dark:bg-[#0A0A0A] border-r border-gray-200 dark:border-gray-800 flex flex-col">
       <div className="flex-1 overflow-y-auto">
         <div className="py-8 px-4">
           <Link href="/" className="block mb-8">
