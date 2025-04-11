@@ -140,7 +140,7 @@ cd nom-du-projet
 # Installer les dépendances
 npm install
 
-# Configurer les variables d&apos;environnement
+# Configurer les variables d'environnement
 cp .env.example .env.local
 # Éditer le fichier .env.local avec vos configurations
 
