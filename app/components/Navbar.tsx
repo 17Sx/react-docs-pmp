@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ThemeToggle from './ThemeToggle';
 
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
   <Link 
@@ -24,7 +23,7 @@ const NavSection = ({ title, children }: { title: string; children: React.ReactN
 
 const Navbar = () => {
   return (
-    <nav className="fixed left-0 top-0 h-screen w-64 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 flex flex-col">
+    <nav className="fixed left-0 top-0 h-screen w-64 z-100 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 flex flex-col">
       <div className="p-4">
         <Link href="/" className="text-xl font-bold">
           Documentation PMP
@@ -83,7 +82,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <ThemeToggle />
     </nav>
   );
 };
