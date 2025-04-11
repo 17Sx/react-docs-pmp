@@ -152,7 +152,7 @@ npm run dev`}
               <h3 className="text-lg font-semibold mb-2">Résultat attendu</h3>
               <div className="space-y-4">
                 <div className="bg-purple-600 p-4 rounded font-mono">
-                  Cloning into 'nom-du-projet'...
+                  Cloning into &apos;nom-du-projet&apos;...
                 </div>
                 <div className="bg-purple-600 p-4 rounded font-mono">
                   added 1234 packages in 45s

@@ -148,7 +148,7 @@ npm run dev`}
                     <h4 className="font-semibold mb-2">Accès</h4>
                     <ul className="space-y-2 text-sm">
                       <li>• Site web : http://localhost:3000</li>
-                      <li>• Admin : http://localhost:3000/admin</li>
+                      <li>• Admin : http://localhost:3000/admin/articles</li>
                     </ul>
                   </div>
                 </div>

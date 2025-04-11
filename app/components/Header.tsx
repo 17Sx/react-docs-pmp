@@ -14,7 +14,7 @@ export default function Header() {
             className="rounded-full"
           />
           <span className="text-2xl font-bold">/</span>
-          <a target="_blank" href="https://github.com/17Sx">
+          <Link target="_blank" href="https://github.com/17Sx">
 
           <Image
             src="/logosx.png"
@@ -23,7 +23,7 @@ export default function Header() {
             height={50}
           />
 
-          </a>
+          </Link>
         </Link>
       </div>
       <nav className="flex items-center space-x-6">

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Header from './components/Header'
-
+import Footer from './components/Footer'
 export default function Home() {
   return (
     <>
@@ -14,7 +14,7 @@ export default function Home() {
               </h1>
             </div>
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              Ce site web a été crée pour vous aider à apprendre React, Next.js et Node.js pour faire les applications PMP crée par <Link href="https://github.com/17Sx" className="text-blue-600 dark:text-blue-400 hover:underline">17Sx</Link>
+              Ce site web a été crée pour vous aider à apprendre React, Next.js et Node.js pour faire les applications PMP crée par <Link target="_blank" href="https://github.com/17Sx" className="text-blue-600 dark:text-blue-400 hover:underline">17Sx</Link>
             </p>
           </div>
 
@@ -73,7 +73,7 @@ export default function Home() {
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               Cliquer sur le bouton ci-dessous pour commencer le tutoriel
             </p>
-            <a 
+            <Link 
               href="/installation" 
               className="inline-flex items-center px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
             >
@@ -81,7 +81,7 @@ export default function Home() {
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </a>
+            </Link>
           </div>
 
           <div className="space-y-4">

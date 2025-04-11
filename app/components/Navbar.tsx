@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import ThemeToggle from './ThemeToggle';
 
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
   <Link 
@@ -22,46 +24,66 @@ const NavSection = ({ title, children }: { title: string; children: React.ReactN
 
 const Navbar = () => {
   return (
-    <nav className="w-64 border-r border-gray-200 dark:border-gray-800 h-screen overflow-y-auto fixed">
-      <div className="py-8 px-4">
-        <Link href="/" className="block mb-8">
-          <h1 className="text-xl font-bold">
-            Documentation PMP
-          </h1>
+    <nav className="fixed left-0 top-0 h-screen w-64 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 flex flex-col">
+      <div className="p-4">
+        <Link href="/" className="text-xl font-bold">
+          Documentation PMP
         </Link>
+      </div>
+      <div className="flex-1 overflow-y-auto">
+        <div className="py-8 px-4">
+          <Link href="/" className="block mb-8">
+            <div className="flex items-center space-x-2">
+            <Image
+              src="/logo.png"
+              alt="Logo PMP"
+              width={60}
+              height={60}
+              className="rounded-full"
+            />
+            <span className="text-2xl font-bold">/</span>
 
-        <div className="space-y-8">
-          <NavSection title="Démarrage">
-            <NavLink href="/installation">
-              Installation
-            </NavLink>
-          </NavSection>
+            <Image
+              src="/logosx.png"
+              alt="Logo 17Sx"
+              width={50}
+              height={50}
+            />
 
-          <NavSection title="Fondamentaux">
-            <NavLink href="/react">
-              React
-            </NavLink>
-            <NavLink href="/nextjs">
-              Next.js
-            </NavLink>
-            <NavLink href="/nodejs">
-              Node.js
-            </NavLink>
-            <NavLink href="/prisma">
-              Prisma
-            </NavLink>
-          </NavSection>
+          </div>
+          </Link>
 
-          <NavSection title="Projet">
-          <NavLink href="/signature-pmp">
-              Signature PMP
-            </NavLink>
-            <NavLink href="/pmp-sv">
-                PMP site vitrine
-            </NavLink>
-          </NavSection>
+          <div className="space-y-8">
+            <NavSection title="Démarrage">
+              <NavLink href="/installation">
+                Installation
+              </NavLink>
+            </NavSection>
+
+            <NavSection title="Fondamentaux">
+              <NavLink href="/react">
+                React
+              </NavLink>
+              <NavLink href="/nextjs">
+                Next.js
+              </NavLink>
+              <NavLink href="/prisma">
+                Prisma
+              </NavLink>
+            </NavSection>
+
+            <NavSection title="Projet">
+            <NavLink href="/signature-pmp">
+                Signature PMP
+              </NavLink>
+              <NavLink href="/pmp-sv">
+                  PMP site vitrine
+              </NavLink>
+            </NavSection>
+          </div>
         </div>
       </div>
+      <ThemeToggle />
     </nav>
   );
 };
