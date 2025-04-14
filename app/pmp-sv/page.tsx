@@ -285,7 +285,7 @@ pmp-sv/
           <p className="text-gray-600 dark:text-gray-400 mb-6">
             Documentation complète pour comprendre et utiliser l&apos;application :  
             
-            <Link className="ml-2 text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300" href="https://github.com/17Sx/pmp-sv/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+            <Link className="ml-2 text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300" href="https://github.com/17Sx/pmp-sv/blob/main/README.md#-pmp-solutions-website-version-fran%C3%A7aise" target="_blank" rel="noopener noreferrer">
                Lien vers le README.md
             </Link>
           </p>
