@@ -1,14 +1,24 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
-const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <Link 
-    href={href} 
-    className="block px-4 py-2 text-sm hover:text-gray-900 dark:hover:text-white transition-colors"
-  >
-    {children}
-  </Link>
-);
+const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
+  return (
+    <Link 
+      href={href} 
+      className={`block px-4 py-2 text-sm hover:text-gray-900 dark:hover:text-white transition-colors ${
+        isActive ? 'text-blue-500 dark:text-blue-400 font-medium' : ''
+      }`}
+    >
+      {children}
+    </Link>
+  );
+};
 
 const NavSection = ({ title, children }: { title: string; children: React.ReactNode }) => (
   <div className="mb-6">
