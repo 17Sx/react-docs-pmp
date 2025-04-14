@@ -15,7 +15,7 @@ export default function Home() {
               </h1>
             </div>
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              Ce site web a été crée pour vous aider à apprendre React, Next.js, Node.js et Prisma pour faire les applications PMP crée par <Link target="_blank" href="https://github.com/17Sx" className="text-blue-600 dark:text-blue-400 hover:underline">17Sx</Link>
+              Ce site web a été crée pour vous aider à apprendre React, Next.js, typescript et Prisma pour faire les applications PMP crée par <Link target="_blank" href="https://github.com/17Sx" className="text-blue-600 dark:text-blue-400 hover:underline">17Sx</Link>
             </p>
           </div>
 
@@ -42,7 +42,7 @@ export default function Home() {
                   <svg className="w-6 h-6 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  Node.js - Un environnement d&apos;exécution JavaScript côté serveur
+                  TypeScript - Un sur-ensemble typé de JavaScript qui ajoute des types statiques
                 </li>
                 <li className="flex items-center">
                   <svg className="w-6 h-6 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,7 +65,7 @@ export default function Home() {
                   <li>Commencez par la section Installation</li>
                   <li>Explorez les bases de React</li>
                   <li>Découvrez les fonctionnalités de Next.js</li>
-                  <li>Approfondissez avec Node.js</li>
+                  <li>Approfondissez avec TypeScript</li>
                   <li>Apprenez à utiliser Prisma pour la gestion de base de données</li>
                   <li>Vous pouvez aussi vous rendre sur la page des projets pour voir les explications des applications PMP</li>
                 </ol>
