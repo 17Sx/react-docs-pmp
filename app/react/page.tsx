@@ -12,6 +12,22 @@ export default function React() {
         </p>
       </div>
 
+      <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
+          <h2 className="text-2xl font-semibold mb-4">Qu&apos;est-ce que React.js ?</h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
+            React.js est une bibliothèque JavaScript open-source développée par Facebook pour créer des interfaces utilisateur interactives. 
+            Elle permet de construire des applications web modernes en utilisant une approche basée sur les composants réutilisables.
+          </p>
+          <a 
+            href="https://react.dev" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
+          >
+            Documentation officielle React → 
+          </a>
+        </section>
+
       <div className="w-full space-y-8">
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
           <h2 className="text-2xl font-semibold mb-4">Les Composants</h2>

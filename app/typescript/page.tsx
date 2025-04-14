@@ -19,7 +19,7 @@ export default function TypeScript() {
 
       <div className="w-full space-y-8">
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
-          <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
+          <h2 className="text-2xl font-semibold mb-4">Qu&apos;est-ce que TypeScript ?</h2>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
             TypeScript est un sur-ensemble typé de JavaScript qui se compile en JavaScript simple. 
             Il ajoute des types statiques optionnels à JavaScript, ce qui permet de détecter les erreurs 
@@ -239,6 +239,10 @@ function useCounter(initialValue: number = 0) {
               </ul>
             </div>
           </div>
+        </section>
+
+        <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
+          <h2 className="text-2xl font-semibold mb-4">Documentation complète</h2>
           <div className="mt-4 space-y-2">
             <a 
               href="https://react.dev/learn/typescript" 
