@@ -292,6 +292,17 @@ signature-pmp/
             </div>
           </div>
         </section>
+
+        <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
+          <h2 className="text-2xl font-semibold mb-4">Ne pas hesiter a aller voir le README.md</h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
+            Documentation complète pour comprendre et utiliser l&apos;application :  
+            
+            <Link className="ml-2 text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300" href="https://github.com/17Sx/signature-pmp/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+               Lien vers le README.md
+            </Link>
+          </p>
+        </section>
       </div>
     </div>
   )
