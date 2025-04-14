@@ -51,6 +51,15 @@ npm --version`}
               </div>
             </div>
           </div>
+
+          <a 
+            href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm " 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block mt-5 "
+          >
+            En savoir plus → 
+          </a>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -84,6 +93,15 @@ git --version`}
               </div>
             </div>
           </div>
+
+          <a 
+            href="https://git-scm.com/downloads" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block mt-5 "
+          >
+            Lien de téléchargement → 
+          </a>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -122,6 +140,15 @@ sudo snap install --classic code`}
               </div>
             </div>
           </div>
+
+          <a 
+            href="https://code.visualstudio.com/download " 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block mt-5 "
+          >
+            Lien de téléchargement → 
+          </a>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -165,6 +192,15 @@ npm run dev`}
               </div>
             </div>
           </div>
+
+          <a 
+            href="https://www.youtube.com/watch?v=XXCPDzv5p2U  " 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block mt-5 "
+          >
+            Vidéo explicative → 
+          </a>
         </section>
 
         <div className="flex justify-end mt-8">
