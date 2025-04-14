@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NextJS() {
   return (
     <div className="space-y-12">
@@ -169,6 +171,19 @@ export async function POST(request: Request) {
             </a>
           </div>
         </section>
+
+        <div className="flex justify-end mt-8">
+        <Link 
+          href="/typescript" 
+          className="inline-flex items-center px-6 py-3 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+        >
+          Aller à la page suivante
+          <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </Link>
+      </div>
+
       </div>
     </div>
   );
