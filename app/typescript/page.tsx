@@ -27,14 +27,14 @@ export default function TypeScript() {
             Il ajoute des types statiques optionnels à JavaScript, ce qui permet de détecter les erreurs 
             plus tôt dans le processus de développement.
           </p>
-          <a 
+          <Link
             href="https://www.typescriptlang.org/docs/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
           >
             Documentation officielle TypeScript →
-          </a>
+          </Link>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -115,14 +115,14 @@ return "Nom: " + nom + " (" + verifierType(nom) + ")\\n" +
               title="Explorer les types de base" 
             />
           </div>
-          <a 
+          <Link 
             href="https://www.typescriptlang.org/docs/handbook/basic-types.html" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
           >
             Documentation sur les types de base →
-          </a>
+          </Link>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -199,14 +199,14 @@ return "Addition(5, 3): " + resultat1 + "\\n" +
               title="Expérimenter avec les fonctions typées" 
             />
           </div>
-          <a 
+          <Link 
             href="https://www.typescriptlang.org/docs/handbook/functions.html" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
           >
             Documentation sur les fonctions →
-          </a>
+          </Link>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -300,14 +300,14 @@ return "Identité(42): " + identite(42) + "\\n" +
               title="Explorer le concept de génériques" 
             />
           </div>
-          <a 
+          <Link 
             href="https://www.typescriptlang.org/docs/handbook/generics.html" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
           >
             Documentation sur les génériques →
-          </a>
+          </Link>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -367,30 +367,30 @@ function useCounter(initialValue: number = 0) {
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
           <h2 className="text-2xl font-semibold mb-4">Documentation complète</h2>
           <div className="mt-4 space-y-2">
-            <a 
+            <Link 
               href="https://www.typescriptlang.org/docs/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
             >
               Documentation officielle TypeScript →
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="https://react.dev/learn/typescript" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
             >
               TypeScript avec React →
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="https://www.typescriptlang.org/play" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
             >
               TypeScript Playground →
-            </a>
+            </Link>
           </div>
         </section>
       </div>

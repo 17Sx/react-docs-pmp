@@ -22,14 +22,14 @@ export default function React() {
             React.js est une bibliothèque JavaScript open-source développée par Facebook pour créer des interfaces utilisateur interactives. 
             Elle permet de construire des applications web modernes en utilisant une approche basée sur les composants réutilisables.
           </p>
-          <a 
+          <Link 
             href="https://react.dev" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
           >
             Documentation officielle React → 
-          </a>
+          </Link>
         </section>
 
       <div className="w-full space-y-8">
@@ -84,14 +84,14 @@ return element;`}
             />
           </div>
           
-          <a 
+          <Link 
             href="https://react.dev/learn/your-first-component" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
           >
             Documentation sur les composants →
-          </a>
+          </Link>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -139,14 +139,14 @@ return resultat1 + "\\n" + resultat2;`}
             />
           </div>
           
-          <a 
+          <Link 
             href="https://react.dev/learn/passing-props-to-a-component" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
           >
             Documentation sur les props →
-          </a>
+          </Link>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
@@ -204,35 +204,35 @@ return incrementer();`}
             />
           </div>
           
-          <a 
+          <Link 
             href="https://react.dev/learn/state-a-components-memory" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 mt-4 block"
           >
             Documentation sur le state →
-          </a>
+          </Link>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
           <h2 className="text-2xl font-semibold mb-4">Documentation complète</h2>
           <div className="space-y-2">
-            <a 
+            <Link 
               href="https://react.dev/learn" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
             >
               Guide d&apos;apprentissage React →
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="https://react.dev/reference" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
             >
               Référence API React →
-            </a>
+            </Link>
           </div>
         </section>
       </div>
