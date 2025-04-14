@@ -178,6 +178,13 @@ npm run dev`}
             PMP vitrine Website est une application web moderne construite avec Next.js, TypeScript et Prisma.
             Elle offre une interface complète pour la gestion de contenu, les newsletters et l&apos;administration.
           </p>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
+            Lien vers le site demo hebergé sur Vercel :  
+            
+            <Link className="ml-2 text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300" href="https://pmp-sv.vercel.app/" target="_blank" rel="noopener noreferrer">
+               Site Vitrine PMP
+            </Link>
+          </p>
         </section>
 
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
