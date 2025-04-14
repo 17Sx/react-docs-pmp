@@ -60,6 +60,12 @@ const Navbar = () => {
               <NavLink href="/installation">
                 Installation
               </NavLink>
+              <NavLink href="/a-savoir">
+                À savoir
+              </NavLink>
+              <NavLink href="/glossaire">
+                Glossaire Technique
+              </NavLink>
             </NavSection>
 
             <NavSection title="Fondamentaux">

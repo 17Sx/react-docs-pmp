@@ -219,7 +219,7 @@ signature-pmp/
 // Technologies principales
 - Next.js 14
 - Prisma (PostgreSQL)
-- Tailwind CSS
+- Scss
 - NextAuth.js
 - React Hook Form`}
               </pre>

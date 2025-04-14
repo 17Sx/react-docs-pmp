@@ -15,7 +15,7 @@ export default function Home() {
               </h1>
             </div>
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              Ce site web a été crée pour vous aider à apprendre React, Next.js, typescript et Prisma pour faire les applications PMP crée par <Link target="_blank" href="https://github.com/17Sx" className="text-blue-600 dark:text-blue-400 hover:underline">17Sx</Link>
+              Ce site web a été crée pour vous aider à apprendre React, Next.js, typescript et Prisma pour les applications PMP crée par <Link target="_blank" href="https://github.com/17Sx" className="text-blue-600 dark:text-blue-400 hover:underline">17Sx</Link> (Noa)
             </p>
           </div>
 
