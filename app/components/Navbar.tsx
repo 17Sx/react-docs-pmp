@@ -33,28 +33,26 @@ const NavSection = ({ title, children }: { title: string; children: React.ReactN
 
 const Navbar = () => {
   return (
-        <nav className="fixed left-0 top-0 h-screen w-64 z-100 bg-white dark:bg-[#0A0A0A] border-r border-gray-200 dark:border-gray-800 flex flex-col">
+    <nav className="fixed left-0 top-0 h-screen w-64 z-100 bg-white dark:bg-[#0A0A0A] border-r border-gray-200 dark:border-gray-800 flex flex-col">
       <div className="flex-1 overflow-y-auto">
         <div className="py-8 px-4">
           <Link href="/" className="block mb-8">
             <div className="flex items-center space-x-2">
-            <Image
-              src="/logo.png"
-              alt="Logo PMP"
-              width={60}
-              height={60}
-              className="rounded-full"
-            />
-            <span className="text-2xl font-bold">/</span>
-
-            <Image
-              src="/logosx.png"
-              alt="Logo 17Sx"
-              width={50}
-              height={50}
-            />
-
-          </div>
+              <Image
+                src="/logo.png"
+                alt="Logo PMP"
+                width={60}
+                height={60}
+                className="rounded-full"
+              />
+              <span className="text-2xl font-bold">/</span>
+              <Image
+                src="/logosx.png"
+                alt="Logo 17Sx"
+                width={50}
+                height={50}
+              />
+            </div>
           </Link>
 
           <div className="space-y-8">
@@ -80,11 +78,11 @@ const Navbar = () => {
             </NavSection>
 
             <NavSection title="Projet">
-            <NavLink href="/signature-pmp">
+              <NavLink href="/signature-pmp">
                 Signature PMP
               </NavLink>
               <NavLink href="/pmp-sv">
-                  PMP site vitrine
+                PMP site vitrine
               </NavLink>
             </NavSection>
           </div>

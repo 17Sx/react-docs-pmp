@@ -205,7 +205,7 @@ npm run dev`}
 
         <div className="flex justify-end mt-8">
         <Link 
-          href="/reactjs" 
+          href="/react  " 
           className="inline-flex items-center px-6 py-3 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
         >
           Aller à la page suivante

@@ -1,6 +1,6 @@
-
 import Link from "next/link";
 import { Metadata } from 'next';
+import CodeEditor from "../components/CodeEditor";
 
 export const metadata: Metadata = {
   title: 'TypeScript Documentation | PMP',
@@ -82,6 +82,39 @@ const user: User = {
               </ul>
             </div>
           </div>
+          
+          <div className="mt-8">
+            <h3 className="text-xl font-semibold mb-4">Essayez par vous-même !</h3>
+            <CodeEditor 
+              initialCode={`// Expérimentez avec différents types TypeScript
+// (Ce code est une simulation car TypeScript est normalement compilé)
+
+// Définir des variables de différents types
+let nom = "Alice";
+let age = 30;
+let estActif = true;
+
+// Créer un objet structuré
+const utilisateur = {
+  nom: nom,
+  age: age,
+  estActif: estActif
+};
+
+// En JavaScript normal, les vérifications de type se font à l'exécution
+function verifierType(valeur) {
+  return typeof valeur;
+}
+
+// Afficher les résultats
+return "Nom: " + nom + " (" + verifierType(nom) + ")\\n" +
+       "Âge: " + age + " (" + verifierType(age) + ")\\n" +
+       "Actif: " + estActif + " (" + verifierType(estActif) + ")\\n" +
+       "Utilisateur: " + JSON.stringify(utilisateur);`} 
+              language="javascript" 
+              title="Explorer les types de base" 
+            />
+          </div>
           <a 
             href="https://www.typescriptlang.org/docs/handbook/basic-types.html" 
             target="_blank" 
@@ -124,6 +157,47 @@ function greet(name: string, greeting?: string): string {
                 <li>Meilleure documentation</li>
               </ul>
             </div>
+          </div>
+          
+          <div className="mt-8">
+            <h3 className="text-xl font-semibold mb-4">Essayez par vous-même !</h3>
+            <CodeEditor 
+              initialCode={`// Essayez différentes fonctions avec validation de type
+// (Version JavaScript simplifiée)
+
+// Fonction qui vérifie si l'argument est un nombre
+function estNombre(valeur) {
+  return typeof valeur === 'number' && !isNaN(valeur);
+}
+
+// Fonction d'addition avec vérification de type
+function addition(a, b) {
+  // Vérification des types (similaire à TypeScript)
+  if (!estNombre(a) || !estNombre(b)) {
+    return "Erreur: Les deux arguments doivent être des nombres";
+  }
+  return a + b;
+}
+
+// Fonction avec paramètre optionnel
+function saluer(nom, salutation = "Bonjour") {
+  return salutation + " " + nom + " !";
+}
+
+// Test des fonctions
+const resultat1 = addition(5, 3);
+const resultat2 = addition("5", 3);
+const resultat3 = saluer("Alice");
+const resultat4 = saluer("Bob", "Salut");
+
+// Afficher les résultats
+return "Addition(5, 3): " + resultat1 + "\\n" +
+       "Addition('5', 3): " + resultat2 + "\\n" +
+       "Saluer('Alice'): " + resultat3 + "\\n" +
+       "Saluer('Bob', 'Salut'): " + resultat4;`} 
+              language="javascript" 
+              title="Expérimenter avec les fonctions typées" 
+            />
           </div>
           <a 
             href="https://www.typescriptlang.org/docs/handbook/functions.html" 
@@ -178,6 +252,53 @@ class Container<T> {
                 <li>Composants React réutilisables</li>
               </ul>
             </div>
+          </div>
+          
+          <div className="mt-8">
+            <h3 className="text-xl font-semibold mb-4">Essayez par vous-même !</h3>
+            <CodeEditor 
+              initialCode={`// Simulons des génériques en JavaScript
+// (Version simplifiée du concept de génériques)
+
+// Fonction "générique" qui retourne son argument
+function identite(arg) {
+  return arg;
+}
+
+// Classe "générique" qui encapsule une valeur
+class Conteneur {
+  constructor(valeur) {
+    this.valeur = valeur;
+  }
+  
+  getValeur() {
+    return this.valeur;
+  }
+  
+  setValeur(nouvelleValeur) {
+    this.valeur = nouvelleValeur;
+    return this;
+  }
+}
+
+// Créer un conteneur de nombre
+const conteneurNombre = new Conteneur(42);
+
+// Créer un conteneur de chaîne
+const conteneurChaine = new Conteneur("Hello");
+
+// Créer un conteneur d'objet
+const conteneurObjet = new Conteneur({ id: 1, nom: "Alice" });
+
+// Afficher les résultats
+return "Identité(42): " + identite(42) + "\\n" +
+       "Identité('Hello'): " + identite("Hello") + "\\n" +
+       "Conteneur nombre: " + conteneurNombre.getValeur() + "\\n" +
+       "Conteneur chaîne: " + conteneurChaine.getValeur() + "\\n" +
+       "Conteneur objet: " + JSON.stringify(conteneurObjet.getValeur());`} 
+              language="javascript" 
+              title="Explorer le concept de génériques" 
+            />
           </div>
           <a 
             href="https://www.typescriptlang.org/docs/handbook/generics.html" 
@@ -247,25 +368,34 @@ function useCounter(initialValue: number = 0) {
           <h2 className="text-2xl font-semibold mb-4">Documentation complète</h2>
           <div className="mt-4 space-y-2">
             <a 
+              href="https://www.typescriptlang.org/docs/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
+            >
+              Documentation officielle TypeScript →
+            </a>
+            <a 
               href="https://react.dev/learn/typescript" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
             >
-              Documentation React avec TypeScript →
+              TypeScript avec React →
             </a>
             <a 
-              href="https://nextjs.org/docs/app/building-your-application/configuring/typescript" 
+              href="https://www.typescriptlang.org/play" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 block"
             >
-              Documentation Next.js avec TypeScript →
+              TypeScript Playground →
             </a>
           </div>
         </section>
-
-        <div className="flex justify-end mt-8">
+      </div>
+      
+      <div className="flex justify-end mt-8">
         <Link 
           href="/prisma" 
           className="inline-flex items-center px-6 py-3 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
@@ -275,8 +405,6 @@ function useCounter(initialValue: number = 0) {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </Link>
-      </div>
-
       </div>
     </div>
   );

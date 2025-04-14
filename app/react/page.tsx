@@ -1,5 +1,8 @@
+'use client';
+
 import Compteur from '../components/Compteur';
 import Link from 'next/link';
+import CodeEditor from '../components/CodeEditor';
 
 export default function React() {
   return (
@@ -54,6 +57,33 @@ export default function React() {
               <p>Ceci est mon premier composant</p>
             </div>
           </div>
+          
+          <div className="mt-8">
+            <h3 className="text-xl font-semibold mb-4">Essayez par vous-même !</h3>
+            <CodeEditor 
+              initialCode={`// Voici comment créer un composant React 
+// (notez que ce code est uniquement pour démonstration)
+
+// Créez une fonction qui retourne un élément
+function creerUnElement(type, contenu) {
+  return { type, contenu };
+}
+
+// Créez un composant simple
+function MonComposant() {
+  return creerUnElement("div", "Bonjour tout le monde!");
+}
+
+// Appelez votre composant dans votre application
+const element = MonComposant();
+
+// Affichez le résultat
+return element;`} 
+              language="javascript" 
+              title="Créez votre propre composant" 
+            />
+          </div>
+          
           <a 
             href="https://react.dev/learn/your-first-component" 
             target="_blank" 
@@ -89,6 +119,26 @@ export default function React() {
               <h1 className="text-xl font-bold">Bonjour Alice !</h1>
             </div>
           </div>
+          
+          <div className="mt-8">
+            <h3 className="text-xl font-semibold mb-4">Essayez par vous-même !</h3>
+            <CodeEditor 
+              initialCode={`// Créez un composant qui utilise des props
+function Salutation(props) {
+  return "Bonjour " + props.nom + " !";
+}
+
+// Appelez le composant avec différentes props
+const resultat1 = Salutation({nom: "Monde"});
+const resultat2 = Salutation({nom: "Alice"});
+
+// Le résultat sera affiché
+return resultat1 + "\\n" + resultat2;`} 
+              language="javascript" 
+              title="Expérimentez avec les props" 
+            />
+          </div>
+          
           <a 
             href="https://react.dev/learn/passing-props-to-a-component" 
             target="_blank" 
@@ -131,6 +181,29 @@ function Compteur() {
               <Compteur />
             </div>
           </div>
+          
+          <div className="mt-8">
+            <h3 className="text-xl font-semibold mb-4">Essayez par vous-même !</h3>
+            <CodeEditor 
+              initialCode={`// Simulons le comportement d'un compteur
+let compteur = 0;
+
+// Fonction pour incrémenter le compteur
+function incrementer() {
+  compteur += 1;
+  return "Compteur incrémenté à : " + compteur;
+}
+
+// Incrémentons plusieurs fois pour simuler
+// l'utilisation du state dans React
+incrementer();
+incrementer();
+return incrementer();`} 
+              language="javascript" 
+              title="Simulez le fonctionnement du state" 
+            />
+          </div>
+          
           <a 
             href="https://react.dev/learn/state-a-components-memory" 
             target="_blank" 
