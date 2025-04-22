@@ -123,6 +123,9 @@ const Navbar = () => {
                 <NavLink href="/pmp-sv">
                   PMP site vitrine
                 </NavLink>
+                <NavLink href="/pmp-gestion">
+                  PMP Gestion
+                </NavLink>
               </NavSection>
             </div>
           </div>
