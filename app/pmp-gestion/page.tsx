@@ -5,7 +5,7 @@ export default function PMPGestion() {
     <div className="space-y-12">
       <div className="space-y-6">
         <h1 className="text-5xl font-bold tracking-tight">
-          Documentation PMP Gestion
+          Documentation PMP - GDC
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-400">
           Guide complet pour comprendre et utiliser l&apos;application de gestion PMP
