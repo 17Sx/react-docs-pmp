@@ -86,7 +86,7 @@ cd signature-pmp`}
 
             <details className="group">
               <summary className="flex items-center justify-between p-4 bg-gray-100 dark:bg-gray-800 rounded-lg cursor-pointer">
-                <h3 className="text-lg font-medium">3. Configuration de l'Environnement</h3>
+                <h3 className="text-lg font-medium">3. Configuration de l&apos;Environnement</h3>
                 <svg className="w-5 h-5 transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                 </svg>
@@ -116,7 +116,7 @@ EMAIL_FROM="noreply@example.com"`}
                     <h4 className="font-semibold mb-2">Variables importantes</h4>
                     <ul className="space-y-2 text-sm">
                       <li>• DATABASE_URL : URL de connexion à PostgreSQL</li>
-                      <li>• NEXTAUTH_SECRET : Clé secrète pour l'authentification</li>
+                      <li>• NEXTAUTH_SECRET : Clé secrète pour l&apos;authentification</li>
                       <li>• EMAIL_* : Configuration du serveur SMTP</li>
                     </ul>
                   </div>
@@ -188,7 +188,7 @@ npm start`}
                     <div className="mt-4 p-3 bg-yellow-600 rounded">
                       <p className="text-sm font-medium">⚠️ Important</p>
                       <p className="text-xs mt-1">
-                        Les deux terminaux doivent être ouverts simultanément pour que l'application fonctionne correctement.
+                        Les deux terminaux doivent être ouverts simultanément pour que l&apos;application fonctionne correctement.
                       </p>
                     </div>
                   </div>
@@ -210,7 +210,7 @@ npm start`}
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
           <h2 className="text-2xl font-semibold mb-4">Architecture</h2>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
-            L'application est construite avec :
+            L&apos;application est construite avec :
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -258,7 +258,7 @@ signature-pmp/
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
           <h2 className="text-2xl font-semibold mb-4">Utilisation</h2>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
-            Guide d'utilisation de l'application :
+            Guide d&apos;utilisation de l&apos;application :
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -291,7 +291,7 @@ signature-pmp/
                 </div>
                 <div className="bg-purple-600 p-4 rounded">
                   <h4 className="font-semibold mb-2">Notifications</h4>
-                  <p className="text-sm">Système d'alertes par email</p>
+                  <p className="text-sm">Système d&apos;alertes par email</p>
                 </div>
                 <div className="bg-purple-600 p-4 rounded">
                   <h4 className="font-semibold mb-2">Historique</h4>
@@ -305,7 +305,7 @@ signature-pmp/
         <section className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
           <h2 className="text-2xl font-semibold mb-4">Ne pas hesiter a aller voir le README.md</h2>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
-            Documentation complète pour comprendre et utiliser l'application :  
+            Documentation complète pour comprendre et utiliser l&apos;application :  
             
             <Link className="ml-2 text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300" href="https://github.com/17Sx/signature-pmp/blob/main/README.md" target="_blank" rel="noopener noreferrer">
                Lien vers le README.md

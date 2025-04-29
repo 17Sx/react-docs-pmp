@@ -39,7 +39,6 @@ interface CommitGraphProps {
 
 export default function CommitGraph({ repoName }: CommitGraphProps) {
   const [lastCommit, setLastCommit] = useState<CommitData | null>(null);
-  const [totalCommits, setTotalCommits] = useState<number | null>(null);
   const [commitHistory, setCommitHistory] = useState<CommitHistory | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -82,13 +81,7 @@ export default function CommitGraph({ repoName }: CommitGraphProps) {
           message: lastCommitData.commit.message
         });
 
-        const linkHeader = historyRes.headers.get('link');
-        if (linkHeader) {
-          const lastPageMatch = linkHeader.match(/page=(\d+)>; rel="last"/);
-          if (lastPageMatch) {
-            setTotalCommits(parseInt(lastPageMatch[1]));
-          }
-        }
+
 
         const monthlyCommits = historyData.reduce((acc: Record<string, number>, commit: { commit: { author: { date: string } } }) => {
           const date = new Date(commit.commit.author.date);
